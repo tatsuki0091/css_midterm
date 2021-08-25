@@ -1,0 +1,342 @@
+/*----------------------------------------------------*/
+/*  PREREQUISITES                                     */
+/*----------------------------------------------------*/
+
+/* target all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #252525;
+    font-family: "Lato", "Arial", "san-serif";
+    font-size: 20px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+/* header section。 */
+header {
+    background-image: url("../img/top.jpg");
+    background-size: cover;
+    height: 450px;
+}
+
+header::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    display: block;
+}
+
+nav {
+    padding-top: 1%;
+}
+
+.logo {
+    width: 7%;
+    height: auto;
+    float: left;
+    margin-left: 15%;
+    position: relative;
+}
+
+.header-sentence {
+    text-align: center;
+    padding-top: 10%;
+    color: white;
+    position: relative;
+}
+
+.main-nav {
+    float: right;
+    margin-right: 7%;
+    padding-top: 2%;
+}
+
+.main-nav li {
+    ;
+    display: inline;
+    padding: 1px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+}
+
+
+.mobile-nav-icon {
+    display: none;
+}
+
+
+
+
+/* ////////////////// */
+/* ////////////////// */
+/* ////////////////// */
+/* List */
+/* ////////////////// */
+/* ////////////////// */
+.product-title {
+    margin-top: 2%;
+}
+
+#column ul {
+    width: calc(100 + 20px);
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+#column li {
+    padding: 0 10px 20px;
+    width: 33.3%;
+    padding: 50px;
+}
+
+#column li a,
+#column li a:visited {
+    text-decoration: none;
+    color: #111;
+}
+
+#column li p {
+    font-size: 90%;
+    margin-bottom: 3px;
+}
+
+#column li span {
+    font-size: 80%;
+    display: block;
+}
+
+
+.column03 li {
+    width: calc(33.3333% - 20px);
+}
+
+img.product-img {
+    width: 80%;
+    height: auto;
+}
+
+
+
+
+
+/* ////////////////// */
+/* ////////////////// */
+/* ////////////////// */
+/* Locate us section。 */
+/* ////////////////// */
+/* ////////////////// */
+
+.map-img {
+    width: 400px;
+    height: auto;
+
+}
+
+
+.locate-address {
+    display: flex;
+    margin-top: 4%;
+
+}
+
+.location-label {
+    text-align: center;
+    width: 10%;
+}
+
+.address-name {
+    margin-top: 1%;
+    margin-left: 25%;
+}
+
+
+
+
+
+/* ///////////// */
+/* ///////////// */
+/* form section。 */
+/* ///////////// */
+/* ///////////// */
+label {
+    float: right;
+}
+
+input[type=text] {
+    margin-left: 8%;
+    width: 65%;
+    float: left;
+}
+
+input[type=email] {
+    margin-left: 8%;
+    width: 65%;
+    float: left;
+}
+
+input[type=submit] {
+    float: left;
+    margin-left: 8%;
+    margin-bottom: 8%;
+    padding: 10px 30px;
+    letter-spacing: 0.1em;
+    color: white;
+    background-color: black;
+    border-radius: 100vh;
+}
+
+textarea {
+    margin-left: 8%;
+    width: 65%;
+    float: left;
+}
+
+select {
+    margin-left: 8%;
+    width: 65%;
+    float: left;
+}
+
+
+/* /////////////// */
+/* /////////////// */
+/* footer section。 */
+/* /////////////// */
+/* /////////////// */
+footer {
+    background-color: black;
+}
+
+.ion-ios-heart {
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    display: inline;
+    padding: 1%;
+}
+
+.social-links a {
+    color: white;
+}
+
+.footer-nav li {
+    display: inline;
+    padding: 1%;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer-sentence {
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* Smartphone */
+@media (max-width: 750px) {
+
+    .header-sentence {
+        text-align: center;
+        padding-top: 35%;
+        color: white;
+        position: relative;
+
+    }
+
+    #column li {
+        float: left;
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .map-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .span-1-of-2 {
+        width: 100%;
+    }
+
+    .span-1-of-3 {
+        width: 100%;
+    }
+
+    .span-2-of-3 {
+        width: 100%;
+    }
+
+    label {
+        float: left;
+        margin-left: 5%;
+    }
+
+    input[type=text] {
+        margin-left: 5%;
+        width: 90%;
+        float: left;
+    }
+
+    input[type=email] {
+        margin-left: 5%;
+        width: 90%;
+        float: left;
+    }
+
+    input[type=submit] {
+        width: 90%;
+        float: left;
+        margin-left: 5%;
+        margin-bottom: 8%;
+        padding: 10px 30px;
+        letter-spacing: 0.1em;
+        color: white;
+        background-color: black;
+        border-radius: 100vh;
+    }
+
+    textarea {
+        margin-left: 5%;
+        width: 90%;
+        float: left;
+    }
+
+    select {
+        margin-left: 5%;
+        width: 90%;
+        float: left;
+    }
+
+}
